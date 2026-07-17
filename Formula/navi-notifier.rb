@@ -1,25 +1,25 @@
 class NaviNotifier < Formula
   desc "Focused, configurable PR-review alerts from GitHub to Slack."
   homepage "https://github.com/lararosekelley/navi"
-  version "0.1.3"
+  version "0.1.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/lararosekelley/navi/releases/download/v0.1.3/navi-notifier-aarch64-apple-darwin.tar.xz"
-      sha256 "6d092d534f8d87ba1f7871e8e8e4d3746536d62835b3c235fbdb03b6986b7582"
+      url "https://github.com/lararosekelley/navi/releases/download/v0.1.4/navi-notifier-aarch64-apple-darwin.tar.xz"
+      sha256 "29911e54d1fdf9e78ee9fbde2ecf9c96171924c3bc69d45f4e0cd37ad9511eaa"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lararosekelley/navi/releases/download/v0.1.3/navi-notifier-x86_64-apple-darwin.tar.xz"
-      sha256 "2bced180c2ae3b690e28ef3192aa8c7fbf3839df003ef0d728d076a4521e3b7f"
+      url "https://github.com/lararosekelley/navi/releases/download/v0.1.4/navi-notifier-x86_64-apple-darwin.tar.xz"
+      sha256 "2023bc871772f48f43fb36d00591a129409c1be3a59509c480069f5723a612ff"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/lararosekelley/navi/releases/download/v0.1.3/navi-notifier-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "2ebd8b367c5e36fc69cad3171673e656a54608d4743668c027eaf30dbcb5a1f6"
+      url "https://github.com/lararosekelley/navi/releases/download/v0.1.4/navi-notifier-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "96ef60cd39c007a4d47f94f925c07b7cd80f39f60efbb3f1dc15263fa3e4834e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lararosekelley/navi/releases/download/v0.1.3/navi-notifier-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "870eb94aac49238fea8ae49b201fc29107013f9b0ef2ab8e939ce79622f53ac8"
+      url "https://github.com/lararosekelley/navi/releases/download/v0.1.4/navi-notifier-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "52ebdb39c30352a34e07bcde036b10a1805e182cd1abbac97c9a32934de0015e"
     end
   end
   license "MIT"
