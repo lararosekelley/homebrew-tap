@@ -1,25 +1,25 @@
 class NaviNotifier < Formula
-  desc "Focused, configurable PR-review alerts from GitHub to Slack."
+  desc "A friendly helper to guide you through the day-to-day noise of code review."
   homepage "https://github.com/lararosekelley/navi"
-  version "0.1.5"
+  version "0.1.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/lararosekelley/navi/releases/download/v0.1.5/navi-notifier-aarch64-apple-darwin.tar.xz"
-      sha256 "36fda1ab2618326468cf08fcb86de12dd6ef85f6bc6f23531beef3395bcad841"
+      url "https://github.com/lararosekelley/navi/releases/download/v0.1.6/navi-notifier-aarch64-apple-darwin.tar.xz"
+      sha256 "ab1f829ac424e85b484f82e5eb14545c22ad52396355033b51276d409fc4bafa"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lararosekelley/navi/releases/download/v0.1.5/navi-notifier-x86_64-apple-darwin.tar.xz"
-      sha256 "09cae61ab40dd0d6afb3f1d4946593bbbf37e4f9f70c066937c73138157941aa"
+      url "https://github.com/lararosekelley/navi/releases/download/v0.1.6/navi-notifier-x86_64-apple-darwin.tar.xz"
+      sha256 "44ed46a994cbde331c0947b5f986b8a3ba842cdcb4d17afe17e8af27b4dff1c6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/lararosekelley/navi/releases/download/v0.1.5/navi-notifier-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "328d64228cfe6f39a53088b65a2fa5892709d3c2cd1489ec2c4056dd23557499"
+      url "https://github.com/lararosekelley/navi/releases/download/v0.1.6/navi-notifier-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "2bdb6f1c8fb785bd7c2561d791dcdd3ef169d636c4cbb908f595e7bb018cb1d7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lararosekelley/navi/releases/download/v0.1.5/navi-notifier-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "17b3b0fe390d7ecffcb2f34a1f5b7fc5152d95188d639acee45172911a8c9a67"
+      url "https://github.com/lararosekelley/navi/releases/download/v0.1.6/navi-notifier-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "d44d7ed8e265ea7ec7bbaa72b187f2f7b8ba8229fa97e1a99da53d209353b403"
     end
   end
   license "MIT"
