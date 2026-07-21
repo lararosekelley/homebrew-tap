@@ -1,25 +1,25 @@
 class NaviNotifier < Formula
   desc "A friendly helper to guide you through the day-to-day noise of code review."
   homepage "https://github.com/lararosekelley/navi"
-  version "0.1.10"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/lararosekelley/navi/releases/download/v0.1.10/navi-notifier-aarch64-apple-darwin.tar.xz"
-      sha256 "189786641ba0a8c47eb902fff8534a4ae00e8a17a1df6a88c8ab4944bd68e93b"
+      url "https://github.com/lararosekelley/navi/releases/download/v0.2.0/navi-notifier-aarch64-apple-darwin.tar.xz"
+      sha256 "9f951152897c8b1d359122504b0e2d1a56730be9f7d6c90f8630df53f72e5c0d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lararosekelley/navi/releases/download/v0.1.10/navi-notifier-x86_64-apple-darwin.tar.xz"
-      sha256 "0dc221ee5c2ad3851fadf9aede8b3a58a3f45eea25ed1cb007281d683fd8afc4"
+      url "https://github.com/lararosekelley/navi/releases/download/v0.2.0/navi-notifier-x86_64-apple-darwin.tar.xz"
+      sha256 "dcfcab20e15b2252798c1460e233eb6b76603e01af4dc83fa6143e5edf970d8f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/lararosekelley/navi/releases/download/v0.1.10/navi-notifier-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "babb2890ece5ddefd5c8a05ddfbd3efcf0646f5dbc4a9e716f3f878a12b4598b"
+      url "https://github.com/lararosekelley/navi/releases/download/v0.2.0/navi-notifier-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "f09002d7ef62efb2451fc22a129ae48691b34d4ffd0e73e58844f7aa0bbd288f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lararosekelley/navi/releases/download/v0.1.10/navi-notifier-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "271c4e75d30619f9d929d0b4bb443420fd2d5f042e0b0381a5c167f7a0d73f36"
+      url "https://github.com/lararosekelley/navi/releases/download/v0.2.0/navi-notifier-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "68835f77e931fe7a3ec5ff235f3892113607211cff2c1bd0c4738f2a78e64e07"
     end
   end
   license "MIT"
