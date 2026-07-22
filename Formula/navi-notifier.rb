@@ -1,25 +1,25 @@
 class NaviNotifier < Formula
   desc "A friendly helper to guide you through the day-to-day noise of code review."
   homepage "https://github.com/lararosekelley/navi"
-  version "0.2.2"
+  version "0.2.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/lararosekelley/navi/releases/download/v0.2.2/navi-notifier-aarch64-apple-darwin.tar.xz"
-      sha256 "75eb7a5c3031065b03166fb2012e45a6e46fe87ed132d07f83d2989fa611da49"
+      url "https://github.com/lararosekelley/navi/releases/download/v0.2.3/navi-notifier-aarch64-apple-darwin.tar.xz"
+      sha256 "ebaf77f699b13e4349bc12cc7231b3d9f9262b6ace6dc4c9d590b2b19565198d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lararosekelley/navi/releases/download/v0.2.2/navi-notifier-x86_64-apple-darwin.tar.xz"
-      sha256 "5fee3417f5ba00eeecd83602b0964aee9402e0a90b36ec3b41f09f6831fe8802"
+      url "https://github.com/lararosekelley/navi/releases/download/v0.2.3/navi-notifier-x86_64-apple-darwin.tar.xz"
+      sha256 "45273b1a791cb008022bb1120fd752fcfaa2f0ba71a64302eaf1a614862a6f24"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/lararosekelley/navi/releases/download/v0.2.2/navi-notifier-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "bf7bdf1c67419450bf6aaff2a33ecf95fed9d56dee46851bc3017c1f62bdea25"
+      url "https://github.com/lararosekelley/navi/releases/download/v0.2.3/navi-notifier-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "21b01bc7f0fc73023e8c9f35d1f34697856501b758453706a4e43dc263ea4a8d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lararosekelley/navi/releases/download/v0.2.2/navi-notifier-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "5da5000aef1d44413599b79a723c54b20bd94534f1d2ac546141e86f3f6b5ec4"
+      url "https://github.com/lararosekelley/navi/releases/download/v0.2.3/navi-notifier-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "294839c15f8576b87f1801133cf2a093cb8fa9a81783d4f20c28aa3345d86b6c"
     end
   end
   license "MIT"
