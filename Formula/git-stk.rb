@@ -1,25 +1,25 @@
 class GitStk < Formula
   desc "Git-native stacked branch workflow helper"
   homepage "https://larakelley.com/posts/git-stk"
-  version "0.11.5"
+  version "0.11.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/lararosekelley/git-stk/releases/download/v0.11.5/git-stk-aarch64-apple-darwin.tar.xz"
-      sha256 "a09f7be973a1840fc4e7660d70e13872781b7a094d47933e4613232b9deb285c"
+      url "https://github.com/lararosekelley/git-stk/releases/download/v0.11.6/git-stk-aarch64-apple-darwin.tar.xz"
+      sha256 "8509015571f9e6164327eb8821dc940f2b3aa88540f322ce8fc977545dfa8e08"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lararosekelley/git-stk/releases/download/v0.11.5/git-stk-x86_64-apple-darwin.tar.xz"
-      sha256 "c6adda483d21c4fb1a709f42d6afdb83df13d5b356585b20d841b17b65ed3f73"
+      url "https://github.com/lararosekelley/git-stk/releases/download/v0.11.6/git-stk-x86_64-apple-darwin.tar.xz"
+      sha256 "8ab30bf56911b5a4e52b6ee730419b2bce971195fbbaa081ff96ec62a1d599d3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/lararosekelley/git-stk/releases/download/v0.11.5/git-stk-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "81fba7673e172b2f403fbe150371c4ab35657e4e543ac7da7634a0ce3ecf3a57"
+      url "https://github.com/lararosekelley/git-stk/releases/download/v0.11.6/git-stk-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "08698110bc55d80a0bb83ae2830110434261cd6b0ff25ecf923710b3136d42b2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lararosekelley/git-stk/releases/download/v0.11.5/git-stk-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "5a53e39669774fb13d12f7914632fa9c942637398bbfc873ea0e470fe63cf9cd"
+      url "https://github.com/lararosekelley/git-stk/releases/download/v0.11.6/git-stk-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "cad35e06957a7fb83b5805334a2d3dda940169087502d1c80b22b8dc7ab6b5c4"
     end
   end
 
@@ -51,10 +51,18 @@ class GitStk < Formula
   end
 
   def install
-    bin.install "git-stk" if OS.mac? && Hardware::CPU.arm?
-    bin.install "git-stk" if OS.mac? && Hardware::CPU.intel?
-    bin.install "git-stk" if OS.linux? && Hardware::CPU.arm?
-    bin.install "git-stk" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "git-stk"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "git-stk"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "git-stk"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "git-stk"
+    end
 
     install_binary_aliases!
 
