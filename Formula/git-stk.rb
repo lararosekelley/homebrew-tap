@@ -1,25 +1,25 @@
 class GitStk < Formula
   desc "Git-native stacked branch workflow helper"
   homepage "https://larakelley.com/posts/git-stk"
-  version "0.16.6"
+  version "0.16.7"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/lararosekelley/git-stk/releases/download/v0.16.6/git-stk-aarch64-apple-darwin.tar.xz"
-      sha256 "afb12493f5a04479c60e391f2dccb8f9ec33a240226e54a65fe428fe5593b93c"
+      url "https://github.com/lararosekelley/git-stk/releases/download/v0.16.7/git-stk-aarch64-apple-darwin.tar.xz"
+      sha256 "19bd245697b3563136ce049b80b7c00b0f812b9df604d04024232168e3164846"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lararosekelley/git-stk/releases/download/v0.16.6/git-stk-x86_64-apple-darwin.tar.xz"
-      sha256 "18e6ffc02313a006888346f626f2c5191380575404bace190d11a0da188b42b7"
+      url "https://github.com/lararosekelley/git-stk/releases/download/v0.16.7/git-stk-x86_64-apple-darwin.tar.xz"
+      sha256 "a84a29637947037b0eb599b893cc38424f4edcabb28feedbc8a48de16301278b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/lararosekelley/git-stk/releases/download/v0.16.6/git-stk-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "2aa982e87dc77decd7f3658042146827c88f55ef9c9b0799524146522ab06e23"
+      url "https://github.com/lararosekelley/git-stk/releases/download/v0.16.7/git-stk-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "b0beb53ce30bfb074917109a3363538add994cfd5660e7199bab72f89ccab14b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lararosekelley/git-stk/releases/download/v0.16.6/git-stk-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "93fde32f2cf67ad4c4248156a810e0edbd9c0300b6782f7c99cdda2c76681c7c"
+      url "https://github.com/lararosekelley/git-stk/releases/download/v0.16.7/git-stk-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "74898fb5758d5d682d3e0a1df00dcd7feffc4432f6400c9879493033b00ad63e"
     end
   end
 
